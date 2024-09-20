@@ -2,6 +2,8 @@
 
 This documentation provides a detailed explanation of the `azubiVerlauf` application, a Python-based GUI program designed to assist apprentices in tracking their progress. The application uses SQLite for data storage and Tkinter for the user interface, with enhancements for better performance, especially in handling background images.
 
+![Image 1](attachments/img_03-azubiVerlauf.jpeg)
+
 ## Table of Contents
 
 1. [Overview](#overview)
