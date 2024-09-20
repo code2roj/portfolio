@@ -2,29 +2,37 @@
 
 Diese Dokumentation bietet eine detaillierte Erklärung der `azubiVerlauf`-Anwendung, eines Python-basierten GUI-Programms, das Auszubildenden hilft, ihren Fortschritt zu verfolgen. Die Anwendung verwendet SQLite zur Datenspeicherung und Tkinter für die Benutzeroberfläche, mit Verbesserungen für eine bessere Leistung, insbesondere beim Umgang mit Hintergrundbildern.
 
+![Image 1](attachments/img_03-azubiVerlauf.jpeg)
 
-## Table of Contents
+## Inhaltsverzeichnis
 
-1. [Overview](#overview)
-2. [Imports and Database Setup](#imports-and-database-setup)
-3. [Database Table Creation](#database-table-creation)
-4. [User Interface Setup](#user-interface-setup)
-   - [Main Window](#main-window)
-   - [Background Image](#background-image)
-   - [Arrival/Departure Section](#arrivaldeparture-section)
-   - [Vocabulary Section](#vocabulary-section)
-   - [Topics Section](#topics-section)
-   - [Self-Learning Section](#self-learning-section)
-   - [Export Section](#export-section)
-5. [Event Handling Functions](#event-handling-functions)
-   - [Arrival Function](#arrival-function)
-   - [Departure Function](#departure-function)
-   - [Save Vocabulary Function](#save-vocabulary-function)
-   - [Save Topic Function](#save-topic-function)
-   - [Save Self-Learning Function](#save-self-learning-function)
-   - [Export to CSV Function](#export-to-csv-function)
-6. [Main Function](#main-function)
-7. [Conclusion](#conclusion)
+1. [Überblick](#überblick)
+2. [Importe und Datenbankeinrichtung](#importe-und-datenbankeinrichtung)
+3. [Erstellung der Datenbanktabelle](#erstellung-der-datenbanktabelle)
+   - [Datenbankverbindung](#datenbankverbindung)
+   - [Tabellen erstellen](#tabellen-erstellen)
+     - [eintragung-Tabelle](#eintragung-tabelle)
+     - [themen-Tabelle](#themen-tabelle)
+     - [selbstlearn-Tabelle](#selbstlearn-tabelle)
+     - [wortschatz-Tabelle](#wortschatz-tabelle)
+   - [Änderungen übernehmen und Verbindung schließen](#änderungen-übernehmen-und-verbindung-schließen)
+4. [Benutzeroberflächen-Setup](#benutzeroberflächen-setup)
+   - [Hauptfenster](#hauptfenster)
+   - [Hintergrundbild](#hintergrundbild)
+   - [Ankunfts-/Abreiseabschnitt](#ankunfts-abreiseabschnitt)
+   - [Wortschatzabschnitt](#wortschatzabschnitt)
+   - [Themenabschnitt](#themenabschnitt)
+   - [Selbstlernabschnitt](#selbstlernabschnitt)
+   - [Exportabschnitt](#exportabschnitt)
+5. [Ereignisbehandlungsfunktionen](#ereignisbehandlungsfunktionen)
+   - [Ankunftsfunktion](#ankunftsfunktion)
+   - [Abgangsfunktion](#abgangsfunktion)
+   - [Wortschatz speichern Funktion](#wortschatz-speichern-funktion)
+   - [Themen speichern Funktion](#themen-speichern-funktion)
+   - [Selbstlernen speichern Funktion](#selbstlernen-speichern-funktion)
+   - [Export nach CSV Funktion](#export-nach-csv-funktion)
+6. [Hauptfunktion](#hauptfunktion)
+7. [Fazit](#fazit)
 
 ---
 ## Überblick
@@ -501,8 +509,3 @@ Die `azubiVerlauf`-Anwendung ist ein umfassendes Tool für Auszubildende, um:
 - Themen und Selbstlernaktivitäten aufzuzeichnen.
 - Ihre Daten für Berichterstattung und Analyse zu exportieren.
 
-**Verbesserungen in der finalen Version**:
-
-- **Dynamisches Skalieren des Hintergrunds**: Verbesserte Leistung durch die Verwendung der Pillow-Bibliothek zur effizienten Handhabung des Skalierens von Hintergrundbildern.
-- **Visuelle Aktualisierungen**: Textfarben wurden auf Schwarz geändert, um die Lesbarkeit gegen den Hintergrund zu verbessern.
-- **Optimierte Ereignisbehandlung**: Reduzierte unnötige Verarbeitung durch Drosselung der Resize-Ereignisse.
