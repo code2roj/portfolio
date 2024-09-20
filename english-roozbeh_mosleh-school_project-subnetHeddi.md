@@ -114,7 +114,7 @@ Host Max: 192.168.1.254
 Available IPs: 254
 
 ```
-
+![Image 2](attachments/img_02-subnetHeddi-gui-screenshot-result.jpeg)
   
 
 ## Source Code
