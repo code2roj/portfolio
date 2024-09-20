@@ -217,7 +217,6 @@ def hintergrundBild(haupt_fenster):
     haupt_fenster.bind("<Configure>", resize_background)
 ```
 
-- **Verbesserung**: Verwendet Pillow, um das Hintergrundbild dynamisch zu skalieren, wenn sich die Fenstergröße ändert.
 - **Vermeidet**: Übermäßiges Skalieren durch Einführung einer Verzögerung mit `after_cancel` und `after`.
 
 ### Ankunfts-/Abreiseabschnitt
