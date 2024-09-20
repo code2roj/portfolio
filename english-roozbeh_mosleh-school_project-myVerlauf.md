@@ -211,7 +211,6 @@ def hintergrundBild(haupt_fenster):
     haupt_fenster.bind("<Configure>", resize_background)
 ```
 
-- **Enhancement**: Uses Pillow to dynamically resize the background image when the window size changes.
 - **Avoids**: Excessive resizing by introducing a delay using `after_cancel` and `after`.
 
 ### Arrival/Departure Section
@@ -504,22 +503,4 @@ The `azubiVerlauf` application is a comprehensive tool for apprentices to:
 - Record topics and self-learning activities.
 - Export their data for reporting and analysis.
 
-**Enhancements in the Final Version**:
 
-- **Dynamic Background Resizing**: Improved performance using the Pillow library to handle background image resizing efficiently.
-- **Visual Updates**: Changed text colors to black for better readability against the background.
-- **Optimized Event Handling**: Reduced unnecessary processing by throttling resize events.
-
-**Notes**:
-
-- Ensure the database file `myVerlauf.db` is accessible and located in the working directory.
-- Verify that the image file `myVerlauf-Hauptfenster.png` exists at the specified path (`resources/image/`).
-- Install the Pillow library (`PIL`) if not already installed:
-  ```bash
-  pip install Pillow
-  ```
-- Consider adding exception handling to manage potential errors, such as missing files or database connection issues.
-
----
-
-This documentation provides a clear and structured explanation of the updated code, making it easier to understand, maintain, and extend the `azubiVerlauf` application.
