@@ -7,7 +7,7 @@
 
 This Python program was written during my preparatory course at BITLC Dortmund. While attending a network module, I developed this project to gain a hands-on understanding of networking concepts. Built using the Tkinter GUI library, this tool helps calculate key network information such as the subnet mask, network address, broadcast address, host range, and the number of available IP addresses. The user inputs an IP address and a CIDR prefix, and the program displays the results in both binary and decimal formats.
 
-  
+![Image 1](attachments/img_01-subnetHeddi-gui-screenshot.jpeg)
 
 ---
 
